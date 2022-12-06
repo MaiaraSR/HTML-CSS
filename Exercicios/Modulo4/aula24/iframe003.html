@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic sapiente voluptatem cum culpa reprehenderit officiis error, rem ut alias commodi quis magnam earum rerum, illum, sequi natus beatae eius accusamus!</p>
+
+    <!--No target tem que colocar o name do iframe -->
+    <ul>
+        <li><a href="paginaExtra/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginaExtra/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginaExtra/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum adipisci vero expedita, illo soluta, quas, placeat accusamus neque qui natus ipsum repellat dolorem enim maxime reiciendis! A deleniti nostrum sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga placeat reprehenderit, delectus qui quisquam nemo deserunt voluptas, dolorum ad eaque ratione possimus. Eius officiis, fugiat fuga deleniti quos velit quis?</p>
+
+    <!--Com o srcdoc pode colocar codigo HTML dentro. Se for preciso colocar aspas, tem que ser simples e não duplas.-->
+    <iframe name="frame" srcdoc="<h1>Escolha uma opção acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error minus veniam aspernatur soluta et, aperiam architecto repudiandae vel sunt amet illum iste cupiditate, quasi reiciendis, fugiat qui saepe perferendis.</p><img src='imagem/imagemp.png'>">
+        <p>Infelizmente seu navegador não é compatível</p>
+    </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde est ipsam quaerat iste sit, consectetur iusto dolor accusamus voluptate optio omnis repellendus non, eveniet tempora, dolorum asperiores deleniti dolore fugit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem vero voluptatum voluptatem id repellat laborum cum et, voluptatibus illum, deserunt facilis. Ab non, nulla vitae odio suscipit quae officia unde.</p>
+</body>
+</html>
