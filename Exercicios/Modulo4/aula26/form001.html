@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+
+    <!--Label vincula o nome "Nome"/"Sobrenome" com o input. Ao clicar no nome o input fica selecionado. É importante para celulares pois tem telas pequenas.-->
+    <!--Método GET mostra os dados na URL (não pode enviar mais de 3000bt/3000letras). Método POST não mostra na URL. Mas não esta completamente invisivel.-->
+    <form autocomplete="off" method="POST" action="cadastro.php">
+        <p><label for="inome">Nome: </label><input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome: </label><input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+</body>
+</html>
